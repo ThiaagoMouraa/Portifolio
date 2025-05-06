@@ -1,0 +1,384 @@
+@font-face {
+    font-family: Roboto;
+    src: url('../../Font/Coolvetica\ Hv\ Comp.otf');
+}
+
+body {
+    background: #000;
+}
+
+/* Estilização de navbar */
+
+header {
+    background: #483D8B;
+    border: solid 2px #836FFF;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline;
+    position: relative;
+    margin: 0 4rem;
+    right: 32rem;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 15pt;
+    position: relative;
+    top: 13px;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 4px;
+    background: #836FFF;
+    position: absolute;
+    left: 0;
+    top: -10px;
+    border-radius: 10rem;
+    transition: width 1s;
+}
+
+nav ul li a:hover::after,
+nav ul li a.active::after{
+    width: 100%;
+}
+
+nav img {
+    position: relative;
+    left: 54rem;
+    top: -8.5px;
+    cursor: pointer;
+    transition: all 2s;
+}
+
+nav img:hover{
+    rotate: 360deg;
+    filter: drop-shadow(1px 1px 10px #00FF00);
+}
+
+/* Estilização de main */
+
+main .container {
+    display: flex;
+    justify-content: center;
+    background-image: url(../../Img/image\ 4.png);
+    background-size: cover;
+    padding: 5rem;
+}
+
+main .photo img {
+    position: relative;
+    border-radius: 0 5rem 0 5rem;
+    border: solid 3px #836FFF;
+    transition: 2s;
+}
+
+main .photo:hover {
+    filter: drop-shadow(1px 10px 20px #836FFF);
+}
+
+main h1 {
+    color: #fff;
+    background: #483D8B;
+    border-right: solid 3px #836FFF;
+    padding: 5rem;
+    border-radius: 0 35px 35px 0px;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    transition: all 1s;
+}
+
+main h1:hover {
+    box-shadow: 0 0 20px 5px #836FFF;
+}
+
+main .descript {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background: #483D8B;
+    border: solid 3px #836FFF;
+    padding: 10rem;
+    
+}
+
+main .descript img {
+    position: relative;
+    border-radius: 70rem;
+    border: solid 3px #836FFF;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+main .descript img:hover{
+    box-shadow: 0 0 10px 5px #836FFF;
+}
+
+main .descript p {
+    color: #fff;
+    font-size: 15pt;
+    position: relative;
+    text-align: left;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 30px;
+    width: 600px;
+}
+
+main .habilidades {
+    display: flex;
+    justify-content: center;
+    background-image: url(/assets/Img/fundo\ 3.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+
+}
+
+main .habilidades img {
+    border-radius: 20rem;
+    margin: 15rem 20px;
+    position: relative;
+    left: -50%;
+    transform: translate(0, 50%);
+    border: solid 3px #836FFF;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+main .habilidades img:hover {
+    box-shadow: 0 0 10px 5px #836FFF;
+    -webkit-transform: scale(1.1);
+   transform: scale(1.1);
+}
+
+main .habilidades h2 {
+    color: #fff;
+    position: relative;
+    left: 35rem;
+    top: 6rem;
+    font-size: 24pt;
+}
+
+main .habilidades h2::after{
+    content: '';
+    width: 100px;
+    height: 5px;
+    background: #836FFF;
+    position: absolute;
+    left: 0;
+    top: -20px;
+    border-radius: 20rem;
+}
+
+/*Estilização do footer*/
+footer {
+    background: #483D8B;
+    justify-content: center;
+    display: flex;
+    border: solid 3px #836FFF;
+}
+
+footer .final img{
+    display: flex;
+    position: relative;
+    top: -5rem;
+    align-items: center;
+}
+
+footer .redes{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    margin: 0;
+    top: 145rem;
+    cursor: pointer;
+    transition: all 2s;
+}
+
+footer .redes .wts{
+    position: relative;
+    top: -1px;
+    transition: all 2s;
+}
+
+footer .redes .int, .git{
+    position: relative;
+    transition: all 2s;
+}
+
+footer .redes .wts:hover, .int:hover, .git:hover{
+    rotate: 360deg;
+}
+
+
+/*Fim da estilização da página index.html*/
+
+/* Inicio de estilização da pagina de orçamento*/
+.content{
+    justify-content: center;
+    display: flex; 
+    background-image: url(../../Img/nave-espacial-brilhante-orbita-planeta-em-galaxia-estrelada-gerada-por-ia.jpg);
+    background-size: cover;
+}
+form {
+    background: #483D8B;
+    position: relative; 
+    margin: 5rem 0;
+    padding: 10rem;
+    border-radius: 20px;
+    border: solid 3px #836FFF;
+    width: 10rem;
+    transition: all 2s;
+}
+
+form:hover{
+    box-shadow: 0 0 20px 5px #836FFF;
+
+}
+
+ .content h2{
+   position: relative;
+   color: #fff;
+   font-size: 25pt;
+   top: -3rem;
+}
+
+.content h2::after{
+    position: absolute;
+    content: '';
+    width: 5rem;
+    height: 4px;
+    background: #836FFF;
+    top: -5px;
+    border-radius: 20px;
+    left: 0;
+    
+}
+
+input{
+    position: relative;
+    margin: 10px 0;
+    border: solid 2px #836FFF;
+    border-radius: 5px;
+    padding: 5px;
+    width: 15rem;
+    height: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    top: 1rem;
+    
+}
+
+
+textarea{
+    position: relative;
+    top: 2rem;
+    left: 50%;
+    transform: translate(-50%);
+    border: solid 2px #836FFF;
+    border-radius: 5px;
+    resize: none;
+    width: 15.7rem;
+}
+
+button {
+    position: relative;
+    top: 4rem;
+    border-radius: 5px;
+    background: #fff;
+    font-size: 10pt;
+    padding: 5px;
+    width: 8rem;
+    height: 2rem;
+    left: 50%;
+    transform: translate(-50%);
+    cursor: pointer;
+    overflow: hidden;
+    border: 2px solid silver;
+}
+
+button::after{
+    content: "";
+    width: 200px;
+    height: 200px;
+    background: #836FFF;
+    position: absolute;
+    border-radius: 150px;
+    top: 20px;
+    left: 5rem;
+    transition: all 2s;
+    z-index: -1;
+}
+
+button:hover::after{
+    top: -30px;
+    left: -30px;
+}
+
+.span-required {
+    display: none;
+    color: #e63636;
+    font-size: 10pt;
+    position: relative;
+    margin: 0;
+    top: 8px;
+    left: -2.5rem;
+}
+
+footer .absolute {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .final1 img{
+    display: flex;
+    position: relative;
+    top: -5rem;
+    align-items: center;
+}
+
+footer .redes1{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    margin: 0;
+    top: 72rem;
+    cursor: pointer;
+    transition: all 2s;
+}
+
+footer .redes1 .wts1{
+    position: relative;
+    top: -1px;
+    transition: all 2s;
+}
+
+footer .redes1 .int1, .git1{
+    position: relative;
+    transition: all 2s;
+}
+
+footer .redes1 .wts1:hover, .int1:hover, .git1:hover{
+    rotate: 360deg;
+}
+
+/* Remove setas do input type="number" nos navegadores baseados em WebKit (Chrome, Safari, Edge) */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Remove setas no Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+

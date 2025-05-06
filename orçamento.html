@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/imports/thiagomoura.css">
+    <link rel="icon" href="/assets/Img/Favicon.png.png">
+    <title>Thiago Moura</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/orçamento.html" class="active">Orçamento</a>
+                </li>
+                <li>
+                    <a href="/assets/index.html">Início</a>
+                </li>
+            </ul>
+            <img src="/assets/Img/image 2.png" alt="contato" id="contact" width="30px" height="">
+        </nav>
+    </header>
+    <main class="box">
+        <div class="content">       
+            <form id="form" action="https://formsubmit.co/titorm1136@gmail.com" method="POST">
+                <h2>Formulário</h2>
+                <div>
+                    <input name="nome" type="text" placeholder="Nome completo" class="inputs required" oninput="nameValidate()">
+                    <span class="span-required">No mínimo 3 caracteres</span>
+                </div>
+                <div>
+                    <input name="email" type="text" placeholder="E-mail" class="inputs required" oninput="emailValidate()">
+                    <span class="span-required">Email incorreto</span>
+                </div>
+                <div>
+                    <input name="numero" type="number" placeholder="Telefone" class="inputs required" oninput="numberValidate()">
+                    <span class="span-required">Numero invalido</span>
+                </div>
+                <textarea name="descricao" id="descricao" cols="25" rows="10">Descrição</textarea><br>
+                <button type="submit" id="click">Enviar</button>
+            </form>
+            <script src="./document.js"></script>
+        </div>
+    </main>
+    <footer class="absolute">
+        <div class="final1">
+            <img class="logo" src="/assets/Img/logo.png" alt="" width="">
+        </div>
+        <div class="redes1">
+            <a href="https://web.whatsapp.com/"><img class="wts1" src="/assets/Img/image 2.png" alt="wathsapp" width="25px" height="24px"></a>
+            <a href="https://github.com/ThiaagoMouraa"><img class="wts"><img class="git1" src="/assets/Img/image 6.png" alt="github"></a>
+            <a href="https://www.instagram.com/thiagomoura_oliveira/profilecard/?igsh=MWdmMmdqMW5ucDgyNA== "><img class="wts"><img class="int1" src="/assets/Img/image 7.png" alt="instagram"></a>
+        </div>
+    </footer>
+</body>
+</html>
