@@ -134,7 +134,7 @@ main .descript p {
 main .habilidades {
     display: flex;
     justify-content: center;
-    background-image: url(/assets/Img/fundo\ 3.png);
+    background-image: url(/Img/fundo\ 3.png);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
