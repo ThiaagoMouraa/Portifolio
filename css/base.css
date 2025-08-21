@@ -66,7 +66,7 @@ nav img:hover{
 main .container {
     display: flex;
     justify-content: center;
-    background-image: url(../../Img/image\ 4.png);
+    background-image: url(/Img/image\ 4.png);
     background-size: cover;
     padding: 5rem;
 }
@@ -224,7 +224,7 @@ footer .redes .wts:hover, .int:hover, .git:hover{
 .content{
     justify-content: center;
     display: flex; 
-    background-image: url(../../Img/nave-espacial-brilhante-orbita-planeta-em-galaxia-estrelada-gerada-por-ia.jpg);
+    background-image: url(/Img/nave-espacial-brilhante-orbita-planeta-em-galaxia-estrelada-gerada-por-ia.jpg);
     background-size: cover;
 }
 form {
