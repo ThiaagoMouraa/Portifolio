@@ -58,8 +58,33 @@
     form {
         padding: 1rem;
     }
-}@media screen and (max-width: 600px) {
-    .left, .main, .right {
-      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+}
+@media (max-width: 480px) {
+    nav ul {
+        padding: 0;
+        font-size: 14px;
     }
-  }
+
+    main h1 {
+        font-size: 18pt;
+    }
+
+    .content h2 {
+        font-size: 16pt;
+    }
+
+    main .habilidades img {
+        max-width: 80px;
+    }
+
+    form input,
+    form textarea {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}
