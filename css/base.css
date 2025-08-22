@@ -5,6 +5,8 @@
 
 body {
     background: #000;
+    margin: 0;
+    padding: 0;
 }
 
 /* Estilização de navbar */
@@ -17,11 +19,19 @@ header {
     justify-content: center;
 }
 
+nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
+
 nav ul li {
-    display: inline;
+    margin: 0 2rem;
     position: relative;
-    margin: 0 4rem;
-    right: 32rem;
+    right: 33rem;
 }
 
 nav ul li a {
@@ -29,6 +39,7 @@ nav ul li a {
     font-size: 15pt;
     position: relative;
     top: 13px;
+    text-decoration: none;
 }
 
 nav ul li a::after {
@@ -50,10 +61,10 @@ nav ul li a.active::after{
 
 nav img {
     position: relative;
-    left: 54rem;
-    top: -8.5px;
+    margin-left: auto;
     cursor: pointer;
     transition: all 2s;
+    left: 45rem;
 }
 
 nav img:hover{
