@@ -235,7 +235,7 @@ footer .redes .wts:hover, .int:hover, .git:hover{
 .content{
     justify-content: center;
     display: flex; 
-    background-image: url(/Img/nave-espacial-brilhante-orbita-planeta-em-galaxia-estrelada-gerada-por-ia.jpg);
+    background-image: url(../Img/nave-espacial-brilhante-orbita-planeta-em-galaxia-estrelada-gerada-por-ia.jpg);
     background-size: cover;
 }
 form {
