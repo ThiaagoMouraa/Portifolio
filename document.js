@@ -52,4 +52,31 @@ function numberValidate(){
         removeError(2);
     }
 }
+const mq = window.matchMedia('(max-width: 600px)');
+
+function handleResize(e) {
+  document.body.style.fontSize = e.matches ? '14px' : '16px';
+}
+
+mq.addListener(handleResize);
+handleResize(mq);
+
+function reorder() {
+  const main = document.querySelector('.main-content');
+  const sidebar = document.querySelector('.sidebar');
+  if (window.innerWidth < 600) {
+    main.parentNode.insertBefore(sidebar, main.nextSibling);
+  } else {
+    main.parentNode.insertBefore(sidebar, main);
+  }
+}
+
+window.addEventListener('load', reorder);
+window.addEventListener('resize', reorder);
+
+function setVH() {
+  document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
+}
+window.addEventListener('resize', setVH);
+window.addEventListener('load', setVH);
 
